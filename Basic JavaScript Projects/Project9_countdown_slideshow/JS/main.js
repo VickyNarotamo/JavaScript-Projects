@@ -1,3 +1,28 @@
+function startCountdown() {
+    var secondsInput = document.getElementById("seconds").value;
+    var seconds = parseInt(secondsInput, 10);
+    if (isNaN(seconds) || seconds <= 0) {
+        alert("Please enter a valid positive number for seconds.");
+        return;
+    }
+    countdown(seconds);
+}
+
+function countdown(seconds) {
+    var timerElement = document.getElementById("timer");
+    var currentSeconds = seconds;
+    timerElement.textContent = currentSeconds;
+    var countdownInterval = setInterval(function() {
+        currentSeconds--;
+        timerElement.textContent = currentSeconds;
+        if (currentSeconds <= 0) {
+            clearInterval(countdownInterval);
+            timerElement.textContent = "Time's up!";
+            alert("Time's up!");
+        }
+    }, 1000);
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

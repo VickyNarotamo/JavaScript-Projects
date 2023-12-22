@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF_8">
+        <link rel="stylesheet" href="CSS_1.css">
+        <script src="JavaScript_2.js" defer></script>
+    </head>
+    <body>
+
+        <h2>HTML Forms</h2>
+
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Your last name.."><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+
+        <p>If you click the "Submit" button, Info will be sent to an external page.</p>
+
+    </body>
+</html>
+
