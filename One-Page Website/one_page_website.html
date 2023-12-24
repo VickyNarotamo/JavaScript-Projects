@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Crew Motorfest | Resort</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./CSS/one_page_website.css">
+		<script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+		
+		<!-- NAV -->
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>RESERVATION</li></a>
+				</ul>
+			</div>
+		</div>
+		<!--END NAV -->
+		
+		<!--HOME -->
+		<div id="home">
+			<div>
+				<div>
+					<span>The Crew Motorfest</span>
+				</div>
+			</div>
+		</div>
+		<!--END HOME -->
+		
+		<!-- GALLERY -->
+		 <section>
+			<div id="gallery">
+				<h1>Gallery</h1>
+				<div>
+				
+					<!-- PHOTO-CONTAINER 1-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_1.jpg" alt="Two Lamborghini cars" style="width:100%" onclick="openModal();currentSlide(1)" 
+                                class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 1 -->
+					
+					<!-- PHOTO-CONTAINER 2-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_2.jpg" alt="Liberty walk BMW car" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 2 -->
+					
+					<!-- PHOTO-CONTAINER 3-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_3.jpg" alt="Lotus car" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 3 -->
+					
+					<!-- PHOTO-CONTAINER 4-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_4.jpg" alt="Toyota car" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 4 -->
+					
+					<!-- PHOTO-CONTAINER 5-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_5.jpg" alt="Lamborghini car" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 5 -->
+					
+					<!-- PHOTO-CONTAINER 6-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_6.jpg" alt="Lamborghini car" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 6 -->
+					
+					<!-- PHOTO-CONTAINER 7-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_7.jpg" alt="Old vintage car" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 7 -->
+					
+					<!-- PHOTO-CONTAINER 8-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_8.jpg" alt="Toyota Supra car" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 8 -->
+					
+					<!-- PHOTO-CONTAINER 9-->
+					<div class="row">
+						<div class="column">
+							<img src="./images/thumb/thumbnail_9.jpg" alt="Ford Bronco SUV" style="width:100%" onclick="openModal();currentSlide(1)" 
+                            class="hover-shadow cursor">
+							<div>
+								<h3>Click to Enlarge</h3>
+								<p>We have several cars for display and renting out, book your car today!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINTER 9 -->
+					
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 9</div>
+                                <img src="./images/thumb/thumbnail_1.jpg" style="width:100%">
+                            </div>
+                      
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 9</div>
+                                <img src="./images/thumb/thumbnail_2.jpg" style="width:100%">
+                            </div>
+                      
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 9</div>
+                                <img src="./images/thumb/thumbnail_3.jpg" style="width:100%">
+                            </div>
+                          
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 9</div>
+                                <img src="./images/thumb/thumbnail_4.jpg" style="width:100%">
+                            </div>
+                        
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 9</div>
+                                <img src="./images/thumb/thumbnail_5.jpg" style="width:100%">
+                            </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 9</div>
+                                <img src="./images/thumb/thumbnail_6.jpg" style="width:100%">
+                            </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 9</div>
+                                <img src="./images/thumb/thumbnail_7.jpg" style="width:100%">
+                            </div>   
+                            
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 9</div>
+                                <img src="./images/thumb/thumbnail_8.jpg" style="width:100%">
+                            </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">9 / 9</div>
+                                <img src="./images/thumb/thumbnail_9.jpg" style="width:100%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Two Lamborghini cars">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Liberty walk BMW car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lotus car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Toyota car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Lamborghini car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Lamborghini car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Old vintage car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Toyota Supra car">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="./images/thumb/thumbnail_9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Ford Bronco SUV">
+                            </div>
+                      
+				</div>
+			</div>
+		</section>
+		<!-- END GALLERY -->
+		
+		<!-- RSVP -->
+		<section>
+			<div id="contact">
+				<div>
+					<h1>Reservation</h1>
+					<div>
+						<h2><span>Your adventure is just one book away.</span>
+							<br />Book your car today!
+						</h2>
+						<p>
+							Please provide us with your basic contact information.
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="First Name">
+								<input class="rsvp" type="text" value="Last Name">
+								<input class="rsvp" type="text" value="Email Address">
+								<input class="rsvp" type="text" value="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END RSVP -->
+		
+		<!-- FOOTER -->
+		<div>
+		<footer>
+			www.thecrewmotorfest.speed &nbsp;|&nbsp; &copy; 2023
+			<p>Author: Motorfest Crew<br>
+			<a href="Motorfest@gmail.com">motorfest@gmail.com</a></p>
+			</footer>
+		</div>
+		<!-- END FOOTER -->
+
+		<em><a href="https://www.ubisoft.com/en-gb/game/the-crew/motorfest/" target="_blank">The Crew Motorfest</a></em>
+		
+	</body>
+</html>
+
