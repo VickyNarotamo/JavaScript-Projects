@@ -1,0 +1,52 @@
+body {
+    background-color: #fd3d3d;
+}
+
+h1, h3, div {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+#menuBG {
+    width: 600px; /* Increased width to accommodate the three columns */
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left, .middle, .right {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 600px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 200px; /* Adjusted margin */
+    width: 100px;
+    height: 40px;
+}
