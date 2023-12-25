@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>jQuery Examples</title>
+</head>
+<body>
+
+    <h2>jQuery Event Example</h2>
+    <button id="clickButton">Click me!</button>
+
+    <h2>jQuery Effect Example</h2>
+    <div id="fadeDiv" style="display: none; background-color: rgb(252, 139, 139); padding: 10px;">
+        This div will fadeIn.
+    </div>
+    <button id="fadeInButton">Fade In</button>
+
+    <script>
+        $(document).ready(function() {
+            // Event setup for handling a click on the button
+            $("#clickButton").click(function() {
+                alert("Button clicked!");
+            });
+
+            // Event setup for fading in the div on button click
+            $("#fadeInButton").click(function() {
+                $("#fadeDiv").fadeIn(1000); // 1000 milliseconds (1 second) duration
+            });
+        });
+    </script>
+
+</body>
+</html>
