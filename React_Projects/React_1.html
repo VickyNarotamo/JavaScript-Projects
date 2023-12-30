@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="My_React_Code"></div>
+    <script>
+        class Counter extends React.Component {
+            render() {
+                var time_Passed = Math.round(this.props.time_Passed / 100);
+                var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0' );
+                var text = 'My React code started running ' + seconds_Passed + ' seconds ago!';
+                return React.createElement('p', null, text);
+            }
+        }
+
+        var counter_Factory = React.createFactory(Counter);
+
+        var start_Counting = new Date().getTime();
+        setInterval(function() {
+            ReactDOM.render(
+                counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+                document.getElementById('My_React_Code')
+            );
+        }, 50);
+    </script>
+</body>
+</html>
+
+<!-- Install react and reactDOM Proceed into terminal typing
+1. npm init -y
+2. npm install react react-dom
+Filepath : "node_modules/react/umd/react.development.js" = react.js
+Filepath : "node_modules/react-dom/umd/react-dom.development.js" = reactDOM.js -->
