@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            // Creates a text string
+            var Movie = "<movie>" +
+                "<title>Madagascar</title>" +
+                "<director>Tom McGrath, Eric Damell</director>" +
+                "<starring>Ben Stiller</starring>" +
+                "<year>2005</year>" +
+                "</movie>";
+
+            // Creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            // Creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Movie, "text/xml");
+
+            // Accesses various elements and displays their values
+            var title = XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            var director = XML_Document.getElementsByTagName("director")[0].childNodes[0].nodeValue;
+            var starring = XML_Document.getElementsByTagName("starring")[0].childNodes[0].nodeValue;
+            var year = XML_Document.getElementsByTagName("year")[0].childNodes[0].nodeValue;
+
+            // Displaying the information
+            document.getElementById("XML_Example").innerHTML = "Title: " + title + "<br>" +
+                                                                "Director: " + director + "<br>" +
+                                                                "Starring: " + starring + "<br>" +
+                                                                "Year: " + year;
+
+        </script>
+    </body>
+</html>
