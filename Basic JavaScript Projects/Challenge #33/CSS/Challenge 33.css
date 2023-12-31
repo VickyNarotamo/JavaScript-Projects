@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2E1F24;
+  }
+
+  header {
+    background-color: #FDC371;
+    color: #FAE7BD;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #AF6C38;
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #BE8D64;
+    color: #21141E;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    margin: 10px;
+  }
+
+  .gallery-item img {
+    transition: transform 0.3s ease-in-out;
+    animation: zoomInOut 15s forwards;
+  }
+
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
