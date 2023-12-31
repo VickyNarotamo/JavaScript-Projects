@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Form</title>
+    <link rel="stylesheet" href="CSS/Openform.css">
+    <script src="JS/Openform.js"></script>
+</head>
+<body>
+
+    <h2>Login Form</h2>
+    <p>Click on the button at the bottom of this page to open the login form.</p>
+  
+    <button class="open-button" onclick="openForm()">Open Form</button>
+  
+    <div class="form-popup" id="myForm">
+      <form action="/login" class="form-container">
+        <h1>Login</h1>
+  
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+  
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+  
+        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+</body>
+</html>

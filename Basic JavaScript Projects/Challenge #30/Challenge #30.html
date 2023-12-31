@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Example</title>
+    <link rel="stylesheet" href="CSS/Challenge #30.css">
+    <script src="JS/Challege #30.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
