@@ -30,3 +30,11 @@ function openModal() {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Add 'fade-in' class to elements after the DOM has loaded
+    var fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(function(element) {
+      element.classList.add('fade-in');
+    });
+  });
