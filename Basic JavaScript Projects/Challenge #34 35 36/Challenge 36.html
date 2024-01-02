@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Header Example</title>
+  <link rel="stylesheet" href="CSS/Challenge 36.css">
+  <script src="JS/Challenge 36.js" defer ></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h2>Smooth Scrolling / Sticky Header</h2>
+</header>
+
+<nav>
+    <ul>
+      <li><a href="#section1">Coding Storytelling</a></li>
+      <li><a href="#section2">Who's the reader</a></li>
+      <li><a href="#section3">Language</a></li>
+    </ul>
+  </nav>
+
+  <button class="contact-button" onclick="openContactForm()">Open Form</button>
+  
+    <div class="contact-form-popup" id="contactForm">
+      <form action="/submit_contact" class="contact-form-container">
+        <h1>Contact Us</h1>
+  
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Your Name" name="name" required>
+  
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Your Email" name="email" required>
+
+        <label for="message"><b>Message</b></label>
+        <textarea placeholder="Enter Your Message" name="message" required></textarea>
+  
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeContactForm()">Close</button>
+      </form>
+    </div>
+
+  <div id="slideshow">
+    <div>
+        <img src="matrix.jpg">
+    </div>
+    <div>
+        <img src="Comp.jpg">
+    </div>
+    <div>
+        Pretty cool slides showing content 1 by 1.
+    </div>
+  </div>
+
+  <section id="section1">
+    <h2>Coding Storytelling</h2>
+    <p>When you have an idea, you want to tell the world about it. And you will use language to do so.</p>
+
+    <p>Language is a force that moves history forward. We can motivate ourselves and other people, share our experiences and explain reality. We use language to talk about things that don’t exist and then bring them to life. We can tell stories about anything.</p>
+
+    <p>I like to think of designing a system as telling a story. A story that is written in a programming language.</p>
+    And just as every story requires a listener, the code always assumes a reader.
+  </section>
+
+  <section id="section2">
+    <h2>Who's the reader</h2>
+    <p>Naturally, the first reader of your code is you. You start with an idea, think and code it. Even when you write a one-off script, later, you may need to change it.</p>
+
+    <p>If you work with a larger project, you have teammates. You are evolving the story of the system with your code. You add storylines and write new chapters. And your teammates will be reading the code you are writing.</p>
+        
+    <p>With time, you and your team will spend more and more time rereading and rewriting. With time, the cleanliness and clarity of your code will have more and more influence on software quality.</p>
+    
+    <p>In the enigmatic world of coding, the primary reader is the machine itself—a computer that meticulously interprets and executes the instructions inscribed by the programmer. Unlike traditional literature where human readers seek meaning, in the realm of code, it is the computational engine that deciphers the written language. The reader, a sophisticated processor, navigates through the intricate syntax, comprehending the logic and algorithms embedded in the code to carry out the intended tasks. Yet, the human programmer is not entirely absent from the narrative; they serve as both the author and the interpreter, bridging the gap between human intent and machine execution. As lines of code unfold, the silent conversation between coder and machine orchestrates a symphony of functionality in the digital symposium.</p>
+
+</section>
+
+  <section id="section3">
+    <h2>Language</h2>
+    <p>The plot of the story is behind the words. You set up characters, build relationships and describe the exterior.</p>
+
+    <p>It seems that our brain is specialized in dealing with complexity in natural language. When people are talking, they discover differences in interpretation and in the meanings of the words being used. Even when people of different languages come together to communicate, they invent a common language, called pidgin.</p>
+        
+    <p>A lot of paradigms in programming and modeling use a natural language as a way of design.</p>
+
+    <p>In the ethereal realm of coding, lines of text weave a tapestry of logic and creativity, breathing life into the digital landscape. Each keystroke is a brushstroke, painting the canvas of possibilities with algorithms and syntax. The programmer, akin to a sorcerer of the virtual realm, conjures spells in the form of functions and variables, manipulating the very fabric of code to bring forth the manifestation of their ideas. Bugs lurk in the shadows, challenging the coder to engage in a relentless quest for perfection, debugging being the hero's journey. As the compiler chants its incantations and the terminal echoes with the hum of execution, a world of binary enchantment unfolds, where logic dances with imagination, and the language of machines reveals the poetry within the lines of code.</p>
+  </section>
+</body>
+</html>
