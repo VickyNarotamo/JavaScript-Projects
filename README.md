@@ -4,8 +4,8 @@ JS Projects
 These are some of the small projects I made using JavaScript.
 
 Projects:
-Pizza Menu
-Tic Tac Toe Game
+Pizza Menu,
+Tic Tac Toe Game,
 Calculator
 
 Pizza Menu
