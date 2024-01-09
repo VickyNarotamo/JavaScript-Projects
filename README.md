@@ -16,3 +16,5 @@ The project entails developing a classic game of tic-tac-toe. To determine the s
 
 Calculator
 The project involves creating a sleek web version of a basic 4-function calculator. Users have the capability to perform addition, subtraction, multiplication, and division operations using this user-friendly interface.
+
+The project includes various challenges and tasks that serve as opportunities to explore and learn about JavaScript functions. Throughout these exercises, I engage with different concepts and enhance my understanding of JavaScript functionality.
