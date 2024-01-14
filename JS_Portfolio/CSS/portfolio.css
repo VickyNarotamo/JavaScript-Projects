@@ -325,6 +325,10 @@ footer {
     background-color: #4d4d4d;
 }
 
+.Column_2.LinkedIn_Column {
+    background-color: #4d4d4d;
+}
+
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
 .Row:after {
 	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
